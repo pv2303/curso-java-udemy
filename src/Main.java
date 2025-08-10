@@ -44,6 +44,44 @@ public class Main {
 		double valor_pc = 5659.99;
 		System.out.printf("Lançado em %d, %s está custando R$%.2f na Amazon.%nAchei extremamente caro!", ano, pc, valor_pc);
 		
+		// Processamento de dados em Java
+		System.out.println("O Processamento de dados ocorre antes de você atribuir a uma variável.");
+		System.out.println("Então, se você tem `x = 5 * 2`, 5*2 é processamento e então passado para a variável x.");
+		int valor_d;
+		double valor_f;
+		valor_d = 2*6;
+		valor_f = 2*1.365;
+		System.out.println("Criei as variáveis `valor_d`, inteira, e `valor_f`, float, e multipliquei ambas por 1.365.\nVamos verificar seus valores:");
+		System.out.printf("valor_d: %d\n", valor_d);
+		System.out.printf("valor_f: %f\n", valor_f);
+
+		System.out.println("Exemplo mais completo: declarar uma série de variáveis simultaneamente");
+		System.out.println("-> Avaliando a área do trapézio...\n Vamos declarar as variáveis b, B e h e calcular a variável área:");
+		double b, B, h, area;
+		b = 6.0;
+		B = 8.0;
+		h = 5.0;
+
+		area = (b + B) / 2.0 * h;
+
+		System.out.printf("A área do trapézio é %.2f\n", area);
+
+		System.out.println("4° Exemplo: processa duas inteiras e o resultado é double. Como funcionaria?");
+		int ex4_a, ex4_b;
+		double ex4_result;
+		ex4_a = 10;
+		ex4_b = 3;
+
+		// ex4_result = ex4_a / ex4_b;
+
+		System.out.println("O compilador entende que vc está dividindo dois números inteiros. Então, o resultado trunca as casas decimais");
+		System.out.println("Como resolvemos isso? Nós declaramos o resultado no processamento com CASTING");
+
+		ex4_result = (double) ex4_a / ex4_b;
+
+		System.out.println(ex4_result);
+
+
 	}
 
 }
